@@ -1,83 +1,156 @@
-Skill India App Documentation
 
-Overview
-The Skill India App is a web-based application designed to provide skill development programs, certifications, and job opportunities to bridge the gap between education and employment. This project utilizes HTML, CSS, JavaScript, and PHP for the backend, with a focus on creating a detailed, clean, and user-friendly multi-page website.
-Project Structure
-The project directory is organized as follows:
+# Skill India App 🇮🇳
 
-admin/: Contains admin-related files.
-api/: API endpoints for the application.
-assets/: Static assets like images and styles.
-config/: Configuration files (e.g., config.php).
-css/: CSS files for styling.
-database/: Database-related files (e.g., database.sql, new_skill_india.sql).
-images/: Image assets.
-includes/: Reusable PHP includes.
-js/: JavaScript files.
-vendor/: Dependencies managed by Composer.
-.env: Environment configuration.
-auth.php: Authentication logic.
-browse-courses.php: Page for browsing courses.
-certificate.php: Certificate generation logic.
-composer.json & composer.lock: Composer dependency files.
-config.php: Main configuration file.
-course_functions.php: Course-related functions.
-course-details.php: Course details page.
-course-videos.php: Course video content.
-course.php & courses.php: Course listing pages.
-dashboard.php: User dashboard.
-enroll-course.php: Course enrollment logic.
-error.log: Error logs.
-index.php: Homepage.
-lesson.php: Lesson content.
-login.php: Login page.
-my-courses.php: My courses page.
-navbar.php: Navigation bar include.
-otp-verification.php: OTP verification logic.
-setup_database.php: Database setup script.
-setup_temp_users.php: Temporary user setup.
-sidebar.php: Sidebar include.
-signup.php: Signup page.
-test.php: Testing file.
-view-jobs.php: Job listings page.
-youtube.php & youtube2.php: YouTube integration files.
+## 🌐 Overview
 
-Features
+The **Skill India App** is a web application designed to empower individuals with access to **skill development programs**, **certifications**, and **job opportunities**, aiming to bridge the gap between education and employment. This user-friendly platform supports browsing courses, enrolling, viewing lessons, obtaining certificates, and applying for jobs.
 
-Multi-Page Navigation: Includes homepage, login/signup, course browsing, dashboard, and more.
-User Authentication: Login and signup functionality with OTP verification.
-Course Management: Browse, enroll, and view course details and videos.
-Certification: Generate certificates upon course completion.
-Job Opportunities: View available job listings.
-Responsive Design: Clean and user-friendly interface using CSS.
+---
 
-Technologies Used
+## 🧰 Tech Stack
 
-HTML: Structure of the web pages.
-CSS: Styling and layout.
-JavaScript: Client-side interactivity.
-PHP: Backend logic and database interaction.
-MySQL: Database management (via database.sql).
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL (SQL Scripts Included)
+- **Package Manager:** Composer
 
-Setup Instructions
+---
 
-Clone the Repository: Clone this project to your local machine.
-Install Dependencies: Run composer install to install PHP dependencies.
-Configure Environment: Update the .env file with your database credentials.
-Set Up Database: Import database.sql and new_skill_india.sql into your MySQL server using a tool like phpMyAdmin or the command line.
-Run the Application: Start your local server (e.g., XAMPP, WAMP) and access index.php via http://localhost/your_project_folder.
+## 📁 Project Structure
 
-Usage
+```
+SkillIndia/
+│
+├── admin/                  # Admin panel (if implemented)
+├── api/                    # API endpoints (if used)
+├── assets/                 # Static assets (images, styles, JS)
+├── config/                 # Configuration files
+│   └── config.php
+├── css/                    # Custom CSS stylesheets
+├── database/               # SQL database files and setups
+├── images/                 # Image assets
+├── includes/               # Included reusable PHP files (header, footer, etc.)
+├── js/                     # JavaScript files
+├── vendor/                 # Composer dependencies
+│
+├── auth.php                # Handles authentication
+├── browse-courses.php      # Browse available courses
+├── certificate.php         # Generate/view certificates
+├── course-functions.php    # PHP functions related to course logic
+├── course-details.php      # Individual course detail page
+├── course-videos.php       # Course video lessons
+├── courses.php             # Courses listing
+├── dashboard.php           # User dashboard
+├── enroll-course.php       # Enroll in courses
+├── error.log               # Error logs
+├── index.php               # Homepage
+├── lesson.php              # Course lessons
+├── login.php               # Login page
+├── logout.php              # Logout endpoint
+├── my-courses.php          # User's enrolled courses
+├── navbar.php              # Navigation bar
+├── new_skill_india.sql     # Main SQL schema
+├── otp-verification.php    # OTP for user verification
+├── setup_database.php      # Initial DB setup
+├── setup_temp_users.php    # Temporary users table setup
+├── sidebar.php             # Sidebar layout
+├── signup.php              # Signup page
+├── test.php                # For testing/debugging
+├── view-jobs.php           # Browse job opportunities
+├── youtube.php             # YouTube video integration
+├── youtube2.php            # Secondary YouTube integration
+├── .env                    # Environment variables (DB credentials etc.)
+├── composer.json           # PHP dependency definitions
+└── composer.lock           # Composer lock file
+```
 
-Navigate to index.php to start.
-Use login.php or signup.php to authenticate.
-Explore courses via browse-courses.php and enroll using enroll-course.php.
-View your progress on dashboard.php and certificates on certificate.php.
-Check job opportunities at view-jobs.php.
+---
 
-Contributing
-Feel free to fork this repository, make improvements, and submit pull requests. Ensure to follow the existing code style and structure.
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-Contact
-For any queries, please open an issue on this repository or contact the maintainers.
+## ⚙️ Setup Instructions
+
+### ✅ Prerequisites
+
+- PHP 7.x or 8.x
+- MySQL / MariaDB
+- Apache / Nginx server (XAMPP, LAMP, or WAMP recommended for local setup)
+- Composer installed (for managing PHP packages)
+
+### 🖥️ Installation
+
+1. **Clone the repository** (if using version control):
+
+   ```bash
+   git clone https://github.com/your-username/skill-india-app.git
+   ```
+
+2. **Set up the database:**
+
+   - Import `database.sql` and `new_skill_india.sql` into your MySQL database using PHPMyAdmin or MySQL CLI.
+
+3. **Configure environment:**
+
+   - Rename `.env.example` to `.env` and update the database credentials.
+
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASS=
+   DB_NAME=skill_india
+   ```
+
+4. **Install PHP dependencies (if any):**
+
+   ```bash
+   composer install
+   ```
+
+5. **Run the app:**
+
+   Place the folder inside your web server directory (`htdocs/` in XAMPP), and open:
+
+   ```
+   http://localhost/skill-india-app/index.php
+   ```
+
+---
+
+## 🧑‍💻 Key Features
+
+- ✅ User Authentication (Login, Signup, OTP Verification)
+- 📚 Course Browsing and Enrollment
+- 🎥 Video Lessons Integration (YouTube)
+- 🎓 Certificate Generation
+- 📄 Dashboard & My Courses Section
+- 💼 Job Listings
+- 🔐 Admin/Setup Scripts for Initial Configuration
+
+---
+
+## 💡 Future Enhancements
+
+- Admin panel for course and user management
+- Resume builder tool
+- Skill assessment quizzes
+- Mobile-responsive UI improvements
+- API integration for job postings
+
+---
+
+## 🤝 Contributors
+
+- You! Add your name here.
+
+---
+
+## 📜 License
+
+This project is for educational purposes and is not under any commercial license yet.
+
+---
+
+## 🙌 Acknowledgements
+
+Inspired by the **Skill India Mission** 🇮🇳 by the Government of India.
+
+---
+
