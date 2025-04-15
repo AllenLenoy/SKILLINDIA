@@ -1,8 +1,9 @@
 Skill India App Documentation
+
 Overview
 The Skill India App is a web-based application designed to provide skill development programs, certifications, and job opportunities to bridge the gap between education and employment. This project utilizes HTML, CSS, JavaScript, and PHP for the backend, with a focus on creating a detailed, clean, and user-friendly multi-page website.
 Project Structure
-The project directory is organized as follows (based on the provided image):
+The project directory is organized as follows:
 
 admin/: Contains admin-related files.
 api/: API endpoints for the application.
