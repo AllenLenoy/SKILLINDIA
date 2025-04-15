@@ -1,0 +1,146 @@
+.course-header {
+    background: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.course-info h1 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.course-info p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 20px;
+}
+
+.course-meta {
+    display: flex;
+    gap: 20px;
+    color: rgba(255,255,255,0.7);
+}
+
+.course-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-meta i {
+    color: #e94560;
+}
+
+.video-list-container {
+    background: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.video-list-container h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.video-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateX(5px);
+}
+
+.video-card.completed {
+    border-left: 4px solid #4CAF50;
+}
+
+.video-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.video-number {
+    width: 40px;
+    height: 40px;
+    background: #e94560;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.video-details h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.video-details p {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.video-meta {
+    display: flex;
+    gap: 15px;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+}
+
+.video-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.course-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.course-actions .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-success {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    opacity: 0.8;
+}

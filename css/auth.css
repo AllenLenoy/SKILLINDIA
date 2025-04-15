@@ -1,0 +1,296 @@
+/* Auth Container */
+.auth-container {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+}
+
+.auth-container .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.auth-card {
+    flex: 1;
+    max-width: 500px;
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.auth-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-image img {
+    maxwidth: 100%;
+    border-radius: 10px;
+}
+
+.auth-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.auth-card p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+/* Auth Form Styles */
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.form-group input {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-light);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.password-toggle {
+    position: relative;
+}
+
+.password-toggle i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.remember-me input {
+    width: auto;
+}
+
+.remember-me label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: var(--primary-color);
+}
+
+/* Auth Divider */
+.auth-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: var(--text-secondary);
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--dark-light);
+}
+
+.auth-divider span {
+    padding: 0 15px;
+}
+
+/* Social Login */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-google {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-google:hover {
+    background-color: #357ABD;
+}
+
+.btn-linkedin {
+    background-color: #0077B5;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-linkedin:hover {
+    background-color: #006097;
+}
+
+/* Auth Footer */
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-secondary);
+}
+
+.auth-footer a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* OTP Inputs */
+.otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.otp-inputs input {
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark-light);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+.otp-inputs input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.otp-resend {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.otp-resend a {
+    color: var(--primary-color);
+}
+
+/* Password Strength */
+.password-strength {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.strength-bar {
+    height: 5px;
+    flex: 1;
+    background-color: var(--dark-light);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.strength-text {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.checkbox-group label a {
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .auth-container .container {
+        flex-direction: column;
+    }
+
+
+
+    .auth-card {
+        max-width: 100%;
+    }
+
+    .auth-image {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-card {
+        padding: 30px 20px;
+    }
+
+    .otp-inputs input {
+        width: 40px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
