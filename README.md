@@ -139,10 +139,6 @@ SkillIndia/
 ## 🤝 Contributors
 
 - Allen Lenoy
-- Adithya Padmanabhan
-- Harsh
-- Adwaith Ashokan
-  
 
 ---
 
